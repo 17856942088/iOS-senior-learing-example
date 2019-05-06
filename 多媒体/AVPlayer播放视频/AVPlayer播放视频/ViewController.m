@@ -49,7 +49,7 @@
     //视频的网址
     NSURL *url = [NSURL URLWithString:@"http://devimages.apple.com/iphone/samples/bipbop/gear1/prog_index.m3u8"];
 
-    
+    //如果没有playItem，就创建一个
     if (!_playItem) {
         
         _playItem = [[AVPlayerItem alloc]initWithURL:url];
